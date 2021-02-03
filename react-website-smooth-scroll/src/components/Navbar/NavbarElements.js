@@ -13,7 +13,6 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 10;
-
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
     }
@@ -42,6 +41,11 @@ export const NavLogo = styled(LinkR)`
     font-weight: bold;
     text-decoration: none;
     font-family: "Montserrat";
+    transition: 0.4s ease-in-out;
+
+    &:hover{
+        color : #a55eea;
+    }
 `
 
 export const MobileIcon = styled.div`
@@ -82,8 +86,37 @@ export const NavLinks = styled(LinkS)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
+    font-family: "Montserrat";
 
     &.active {
         border-bottom: 3px solid #01bf71;
+    }
+`
+export const NavBtn = styled.nav`
+    display:flex;
+    align-items: center;
+
+    @media screen and (max-width: 768px){
+        display: none;
+    }
+`
+export const NavBtnLink = styled(LinkR)`
+    border-radius: 50px;
+    background: #a55eea;
+    padding: 10px 22px;
+    white-space: nowrap;
+    color: #fff;
+    boder: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    font-family: "Montserrat";
+
+    &:hover{
+        transition: all 0.2s ease-in-out;
+        background: #8854d0;
+        color: #222;
     }
 `
