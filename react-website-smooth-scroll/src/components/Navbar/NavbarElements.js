@@ -4,9 +4,9 @@ import { Link as LinkS} from 'react-scroll';
 
 
 export const Nav = styled.nav`
-    background: linear-gradient(125deg, #D980FA, #FDA7DF);
+    background: linear-gradient( 125deg, #D980FA, #9980FA);
     height: 80px;
-    // margin-top: -80px;
+    margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,22 +102,22 @@ export const NavBtn = styled.nav`
     }
 `
 export const NavBtnLink = styled(LinkR)`
-    border-radius: 50px;
-    background: linear-gradient( 125deg, #9980FA, #5758BB);
+    border-radius: 30px;
+    background: #fff;
     padding: 10px 22px;
     white-space: nowrap;
-    color: #fff;
+    color: #D980FA;
     boder: none;
     outline: none;
     font-size: 16px;
     cursor: pointer;
-    transition: 0.7s ease-in;
+    transition: 0.1s ;
     text-decoration: none;
     font-family: "Montserrat";
 
     &:hover{
-        transition: all 0.4s ease-in-out;
-        background: linear-gradient( 180deg, #9980FA, #5758BB);
+        transition: all 0.2s;
         color: #fff;
+        margin-bottom: 6px;
     }
 `

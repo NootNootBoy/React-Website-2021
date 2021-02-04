@@ -8,7 +8,7 @@ export const SidebarContainer = styled.aside`
     z-index: 999;
     width: 100%;
     height: 100%;
-    background: #222;
+    background: linear-gradient( 125deg, #9980FA, #5758BB);
     display: grid;
     align-items: center;
     top: 0;
@@ -73,7 +73,7 @@ export const SideBtnWrap = styled.div`
 
 export const SidebarRoute = styled(LinkR)`
     border-radius: 50px;
-    background: linear-gradient( 125deg, #9980FA, #5758BB);
+    background: linear-gradient(125deg, #D980FA, #FDA7DF);
     white-space: nowrap;
     padding: 16px 64px;
     color: #fff;
