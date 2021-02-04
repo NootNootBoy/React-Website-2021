@@ -2,8 +2,9 @@ import styled from 'styled-components';
 import { Link as LinkR} from 'react-router-dom';
 import { Link as LinkS} from 'react-scroll';
 
+
 export const Nav = styled.nav`
-    background: #222;
+    background: linear-gradient(125deg, #D980FA, #FDA7DF);
     height: 80px;
     // margin-top: -80px;
     display: flex;
@@ -44,7 +45,7 @@ export const NavLogo = styled(LinkR)`
     transition: 0.4s ease-in-out;
 
     &:hover{
-        color : #a55eea;
+        color : #5758BB;
     }
 `
 
@@ -89,7 +90,7 @@ export const NavLinks = styled(LinkS)`
     font-family: "Montserrat";
 
     &.active {
-        border-bottom: 3px solid #01bf71;
+        border-bottom: 3px solid #9980FA;
     }
 `
 export const NavBtn = styled.nav`
@@ -102,7 +103,7 @@ export const NavBtn = styled.nav`
 `
 export const NavBtnLink = styled(LinkR)`
     border-radius: 50px;
-    background: #a55eea;
+    background: linear-gradient( 125deg, #9980FA, #5758BB);
     padding: 10px 22px;
     white-space: nowrap;
     color: #fff;
@@ -110,13 +111,13 @@ export const NavBtnLink = styled(LinkR)`
     outline: none;
     font-size: 16px;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: 0.7s ease-in;
     text-decoration: none;
     font-family: "Montserrat";
 
     &:hover{
-        transition: all 0.2s ease-in-out;
-        background: #8854d0;
-        color: #222;
+        transition: all 0.4s ease-in-out;
+        background: linear-gradient( 180deg, #9980FA, #5758BB);
+        color: #fff;
     }
 `

@@ -62,7 +62,7 @@ export const SidebarLink = styled(LinkS)`
     font-family: "Montserrat";
 
     &:hover{
-        color: #a55eea;
+        color: #5758BB;
         transition: 0.2s ease-in-out;
     }
 `
@@ -73,7 +73,7 @@ export const SideBtnWrap = styled.div`
 
 export const SidebarRoute = styled(LinkR)`
     border-radius: 50px;
-    background: #8854d0;
+    background: linear-gradient( 125deg, #9980FA, #5758BB);
     white-space: nowrap;
     padding: 16px 64px;
     color: #fff;
@@ -87,7 +87,7 @@ export const SidebarRoute = styled(LinkR)`
 
     &:hover{
         transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: #a55eea
+        background: linear-gradient( 180deg, #9980FA, #5758BB);
+        color: #fff;
     }
 `
