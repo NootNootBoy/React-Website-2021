@@ -8,7 +8,7 @@ export const SidebarContainer = styled.aside`
     z-index: 999;
     width: 100%;
     height: 100%;
-    background: #a55eea;
+    background: #222;
     display: grid;
     align-items: center;
     top: 0;
@@ -17,6 +17,8 @@ export const SidebarContainer = styled.aside`
     opacity: ${({ isOpen}) => (isOpen ? '100%' : '0')};
     top: ${({isOpen}) => (isOpen ? '0' : '-100%')};
 `
+
+
 export const CloseIcon = styled(FaTimes)`
     color: #fff;
 `
@@ -34,6 +36,18 @@ export const Icon = styled.div`
 export const SideBarWrapper = styled.div`
     color: #fff;
 `
+
+export const SidebarMenu = styled.ul`
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 80px);
+    text-align: center;
+
+
+    @media screen and (max-width: 480px){
+        grid-template-rows: repeat(6, 60px);
+    }
+`
 export const SidebarLink = styled(LinkS)`
     display: flex;
     align-items: center;
@@ -45,6 +59,7 @@ export const SidebarLink = styled(LinkS)`
     text-decoration: none;
     color: #fff;
     cursor: pointer;
+    font-family: "Montserrat";
 
     &:hover{
         color: #a55eea;
@@ -54,4 +69,25 @@ export const SidebarLink = styled(LinkS)`
 export const SideBtnWrap = styled.div`
     display: flex;
     justify-content: center;
+`
+
+export const SidebarRoute = styled(LinkR)`
+    border-radius: 50px;
+    background: #8854d0;
+    white-space: nowrap;
+    padding: 16px 64px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    font-family: "Montserrat";
+
+    &:hover{
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color: #a55eea
+    }
 `
